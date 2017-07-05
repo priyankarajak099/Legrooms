@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/footer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#ffffff"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+
+    <com.legrooms.Views.TextViewPlus
+        android:id="@+id/tv_footer_search"
+        style="@style/MyButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:drawablePadding="5dp"
+        android:clickable="true"
+        android:drawableTop="@drawable/search_selector"
+        android:text="SEARCH"
+        android:textColor="@color/gray_blue_text_color_selector"
+        android:textSize="10sp"
+        app:customFont="@string/poppin_semibold_fonts" />
+
+    <com.legrooms.Views.TextViewPlus
+        android:id="@+id/tv_message"
+        style="@style/MyButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:drawablePadding="5dp"
+        android:clickable="true"
+
+        android:drawableTop="@drawable/msg_footer_selector"
+        android:text="MESSAGES"
+        android:textColor="@color/gray_blue_text_color_selector"
+        android:textSize="10sp"
+        app:customFont="@string/poppin_semibold_fonts" />
+
+    <com.legrooms.Views.TextViewPlus
+        android:id="@+id/tv_booking"
+        style="@style/MyButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/booking_footer_selector"
+        android:text="BOOKINGS"
+        android:textColor="@color/gray_blue_text_color_selector"
+        android:textSize="10sp"
+        android:clickable="true"
+        app:customFont="@string/poppin_semibold_fonts" />
+
+    <com.legrooms.Views.TextViewPlus
+        android:id="@+id/tv_profile"
+        style="@style/MyButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/you_footer_selector"
+        android:text="YOU"
+        android:textColor="@color/gray_blue_text_color_selector"
+        android:textSize="10sp"
+        android:clickable="true"
+        app:customFont="@string/poppin_semibold_fonts" />
+
+
+</LinearLayout>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.legrooms.LocationDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/back_arrow" />
+
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="45dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Request to book"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            app:customFont="@string/poppin_semibold_fonts"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/im_center_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/im_favourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:src="@mipmap/like_heart" />
+
+                <ImageView
+                    android:id="@+id/im_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/im_favourite"
+                    android:padding="10dp"
+                    android:src="@mipmap/share" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    app:customFont="@string/poppin_semibold_fonts" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/im_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/profile_img"
+                    android:visibility="visible" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_owner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/im_owner"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/im_owner"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp"
+                    app:customFont="@string/poppin_regular_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_owner_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_owner_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/im_owner"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp"
+                    app:customFont="@string/poppin_regular_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_owner_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/im_owner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    app:customFont="@string/poppin_regular_fonts" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c5c5c5"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_usetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Use Type"
+                    android:textColor="@android:color/black"
+                    app:customFont="@string/poppin_semibold_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_usetype_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/holo_blue_light"
+                    app:customFont="@string/poppin_regular_fonts" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c5c5c5"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_fits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Fits"
+                    android:textColor="@android:color/black"
+                    app:customFont="@string/poppin_semibold_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_attendes_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/holo_blue_light"
+                    app:customFont="@string/poppin_regular_fonts" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c5c5c5"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_availability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Availability"
+                    android:textColor="@android:color/black"
+                    app:customFont="@string/poppin_semibold_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_availability_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    app:customFont="@string/poppin_regular_fonts" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c5c5c5"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_neighbourhood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Neighbourhood"
+                    android:textColor="@android:color/black"
+                    app:customFont="@string/poppin_semibold_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_neighbourhood_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/holo_blue_light"
+                    app:customFont="@string/poppin_regular_fonts" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c5c5c5"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Reviews"
+                    android:textColor="@android:color/black"
+                    app:customFont="@string/poppin_semibold_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_reviews_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/holo_blue_light"
+                    app:customFont="@string/poppin_regular_fonts" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c5c5c5"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Description"
+                    android:textColor="@android:color/black"
+                    app:customFont="@string/poppin_semibold_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_desc_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    app:customFont="@string/poppin_regular_fonts" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c5c5c5"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_amenities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Amenities"
+                    android:textColor="@android:color/black"
+                    app:customFont="@string/poppin_semibold_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_amenities_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    app:customFont="@string/poppin_regular_fonts" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c5c5c5"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Rules"
+                    android:textColor="@android:color/black"
+                    app:customFont="@string/poppin_semibold_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_rules_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/holo_blue_light"
+                    app:customFont="@string/poppin_regular_fonts" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_request_booking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_dark"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Request Booking"
+                    android:textColor="@android:color/white"
+                    app:customFont="@string/poppin_regular_fonts" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

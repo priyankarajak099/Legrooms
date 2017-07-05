@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.legrooms.Views.TextViewPlus
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="You"
+            android:textColor="@android:color/white"
+            app:customFont="@string/poppin_regular_fonts"/>
+
+        <com.legrooms.Views.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="+  Add A Space"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts"/>
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/circle"></ImageView>
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/profile_img"></ImageView>
+
+        <ImageView
+            android:id="@+id/im_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@mipmap/setting"></ImageView>
+    </RelativeLayout>
+
+    <com.legrooms.Views.TextViewPlus
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Guest"
+        android:textColor="@android:color/background_dark"
+        app:customFont="@string/poppin_regular_fonts" />
+    <com.legrooms.Views.TextViewPlus
+        android:id="@+id/tv_favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="0 Favourites"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textSize="12sp"
+        android:background="@drawable/grey_circular_selector"
+        android:textColor="@android:color/background_dark"
+        app:customFont="@string/poppin_regular_fonts" />
+    <LinearLayout
+        android:id="@+id/view_no_booking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleX="2.0"
+    android:scaleY="2.0"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:src="@mipmap/heart"/>
+
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_no_booking"
+            style="@style/MyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="You have no favourites"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:customFont="@string/poppin_regular_fonts" />
+
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_start_exploring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_circular_selector"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="Start Exploring"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            app:customFont="@string/poppin_regular_fonts" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ></include>
+</LinearLayout>

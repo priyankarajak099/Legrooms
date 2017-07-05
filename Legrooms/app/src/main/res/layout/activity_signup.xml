@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:src="@mipmap/back_arrow" />
+
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/tv_header_next"
+            android:layout_toRightOf="@+id/im_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            app:customFont="@string/poppin_semibold_fonts" />
+
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_header_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            app:customFont="@string/poppin_semibold_fonts" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/tv_meeting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Profile"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/fl_home_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <com.legrooms.Views.TextViewPlus
+                android:id="@+id/tv_whats_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="Setup My Profile"
+                android:textColor="#ec0000"
+                android:textSize="18sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <com.legrooms.Views.EditText
+                android:id="@+id/et_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/txt_fld"
+                android:drawableLeft="@mipmap/user"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:hint="FirstName"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <com.legrooms.Views.EditText
+                android:id="@+id/et_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/txt_fld"
+                android:drawableLeft="@mipmap/user"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:hint="LastName"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <com.legrooms.Views.EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/txt_fld"
+                android:drawableLeft="@mipmap/lock"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <com.legrooms.Views.EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/txt_fld"
+                android:drawableLeft="@mipmap/msg"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <com.legrooms.Views.EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/txt_fld"
+                android:drawableLeft="@mipmap/phone"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/cb_terms_and_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_agree"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/cb_terms_and_conditions"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="By Checking this box,I agree to peerspace's"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10sp"
+                    app:customFont="@string/poppin_regular_fonts" />
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_Terms_conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_agree"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/cb_terms_and_conditions"
+                    android:gravity="left"
+                    android:text="Terms &amp; Conditions"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="10sp"
+
+                    app:customFont="@string/poppin_regular_fonts" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:src="@mipmap/back_arrow" />
+
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            app:customFont="@string/poppin_semibold_fonts" />
+
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_header_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Done"
+            android:clickable="true"
+            android:textColor="@android:color/white"
+            app:customFont="@string/poppin_semibold_fonts" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/tv_meeting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Profile"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/fl_home_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <com.legrooms.Views.TextViewPlus
+                android:id="@+id/tv_whats_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="About Me"
+                android:textColor="#ec0000"
+                android:textSize="18sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <com.legrooms.Views.EditText
+                android:id="@+id/et_professional_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/txt_fld"
+                android:gravity="left"
+                android:hint="Perfessional Details"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <com.legrooms.Views.EditText
+                android:id="@+id/et_organisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/txt_fld"
+                android:gravity="left"
+                android:hint="Organisation"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <com.legrooms.Views.EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/txt_fld"
+                android:gravity="left"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <com.legrooms.Views.EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/field_blank"
+                android:gravity="left|top"
+                android:hint="Personal Description"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="false"
+                android:paddingTop="10dp"
+                android:maxLines="5"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@mipmap/txt_fld"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/et_image_path"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+
+                    android:hint="Upload your photo"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    app:customFont="@string/poppin_regular_fonts" />
+                <com.legrooms.Views.TextViewPlus
+                    android:id="@+id/tv_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkBlue"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Upload"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:customFont="@string/poppin_regular_fonts" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

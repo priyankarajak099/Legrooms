@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:src="@mipmap/back_arrow" />
+
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Help"
+            android:textColor="@android:color/white"
+            app:customFont="@string/poppin_semibold_fonts" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <com.legrooms.Views.TextViewPlus
+                android:id="@+id/tv_whats_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+
+                android:text="Have questions about peerspaces?"
+                android:textColor="#ec0000"
+                android:textSize="15sp"
+                app:customFont="@string/poppin_regular_fonts" />
+
+            <com.legrooms.Views.TextViewPlus
+                android:id="@+id/tv_whats_next_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has \n \n a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+                android:textColor="#8c8c8c"
+                android:textSize="10sp"
+                app:customFont="@string/poppin_regular_fonts" />
+            <com.legrooms.Views.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="Many destop publishing"
+                android:textColor="@color/darkBlue"
+                android:textSize="10sp"
+                app:customFont="@string/poppin_regular_fonts" />
+            <com.legrooms.Views.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="Not seeing your city?"
+                android:textColor="#ec0000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                app:customFont="@string/poppin_regular_fonts" />
+            <com.legrooms.Views.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has "
+                android:textColor="#8c8c8c"
+                android:textSize="10sp"
+                app:customFont="@string/poppin_regular_fonts" />
+            <com.legrooms.Views.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="Email"
+                android:textColor="#ec0000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                app:customFont="@string/poppin_regular_fonts" />
+            <com.legrooms.Views.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="info@yourmail.com"
+                android:textColor="#8c8c8c"
+                android:textSize="10sp"
+                app:customFont="@string/poppin_regular_fonts" />
+            <com.legrooms.Views.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="Phone"
+                android:textColor="#ec0000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                app:customFont="@string/poppin_regular_fonts" />
+            <com.legrooms.Views.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="+1(123)456-789 \nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has "
+                android:textColor="#8c8c8c"
+                android:textSize="10sp"
+                app:customFont="@string/poppin_regular_fonts" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

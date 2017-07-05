@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:layout_alignParentLeft="true"
+            android:text="Cancel"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            app:customFont="@string/poppin_semibold_fonts"
+            />
+
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Filter"
+            android:textColor="@android:color/white"
+            app:customFont="@string/poppin_semibold_fonts"
+            android:layout_alignBaseline="@+id/tv_cancel"
+            android:layout_alignBottom="@+id/tv_cancel"
+            android:layout_alignRight="@+id/tv_clearall"
+            android:layout_alignEnd="@+id/tv_clearall" />
+        <com.legrooms.Views.TextViewPlus
+            android:id="@+id/tv_clearall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:text="Clear All"
+            android:textColor="@android:color/white"
+            app:customFont="@string/poppin_semibold_fonts"
+            />
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/tv_account_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/txt_fld"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp">
+
+        <com.legrooms.Views.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:hint="Location"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts" />
+
+        <com.legrooms.Views.EditText
+            android:id="@+id/et_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="Enter your Location"
+            android:inputType="text"
+            android:textColor="#535353"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/txt_fld"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp">
+
+        <com.legrooms.Views.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:hint="Availibity"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts" />
+
+        <com.legrooms.Views.EditText
+            android:id="@+id/et_availibity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="Any"
+            android:inputType="text"
+            android:textColor="#535353"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/txt_fld"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp">
+
+        <com.legrooms.Views.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:hint="Total Attendees"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts" />
+
+        <com.legrooms.Views.EditText
+            android:id="@+id/et_total_attendees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="Any"
+            android:inputType="text"
+            android:textColor="#535353"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/txt_fld"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp">
+
+        <com.legrooms.Views.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:hint="Max. Price"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts" />
+
+        <com.legrooms.Views.EditText
+            android:id="@+id/et_max_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="Any"
+            android:inputType="text"
+            android:textColor="#535353"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/txt_fld"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp">
+
+        <com.legrooms.Views.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:hint="Amenities"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts" />
+
+        <com.legrooms.Views.EditText
+            android:id="@+id/et_amenities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="Any"
+            android:inputType="text"
+            android:textColor="#535353"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:customFont="@string/poppin_regular_fonts" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:gravity="center">
+
+        <com.legrooms.Views.Button
+            android:id="@+id/btn_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/booking_selector"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Apply"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:customFont="@string/poppin_regular_fonts" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>
